@@ -1,0 +1,31 @@
+import java.util.Scanner;
+
+public class Input2 {
+    public static void main(String[] args) {
+        // Define variables
+        String name;
+        String date;
+        int age;
+
+        // Create a Scanner object for input
+        Scanner scanner = new Scanner(System.in);
+
+        // Input values
+        System.out.print("Enter your name: ");
+        name = scanner.nextLine();
+
+        System.out.print("Enter the date (MM-DD-YY): ");
+        date = scanner.nextLine();
+
+        System.out.print("Enter your age: ");
+        age = scanner.nextInt();
+
+        // Close the Scanner
+        scanner.close();
+
+        // Print the values
+        System.out.println("Name: " + name);
+        System.out.println("Date: " + date);
+        System.out.println("Age: " + age);
+    }
+}
